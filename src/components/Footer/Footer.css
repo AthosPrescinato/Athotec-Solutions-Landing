@@ -1,0 +1,20 @@
+.footer {
+  /* Barra de largura total */
+  width: 100%;
+  margin-top: auto; /* Para o rodapé fixo no final da página */
+  background-color: #222629;
+  border-top: 1px solid #4f4f47;
+  color: #777777;
+}
+
+.footer .container {
+  /* A classe .container do App.css lida com a largura máxima e o preenchimento horizontal */
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin: 0; /* Remove a margem padrão do parágrafo */
+}
