@@ -4,25 +4,30 @@ import Home from '../pages/Home/Home';
 import BoardGames from '../pages/BoardGames/BoardGames';
 import About from '../pages/About/About';
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <Layout />,
+      children: [
+        {
+          index: true,
+          element: <Home />,
+        },
+        {
+          path: 'board-games',
+          element: <BoardGames />,
+        },
+        {
+          path: 'about',
+          element: <About />,
+        },
+      ],
+    },
+  ],
   {
-    path: '/',
-    element: <Layout />,
-    children: [
-      {
-        index: true,
-        element: <Home />,
-      },
-      {
-        path: 'board-games',
-        element: <BoardGames />,
-      },
-      {
-        path: 'about',
-        element: <About />,
-      },
-    ],
-  },
-]);
+    basename: '/Athotec-Solutions-Landing/',
+  }
+);
 
 export default router;
