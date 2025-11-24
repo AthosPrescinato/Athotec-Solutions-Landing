@@ -3,6 +3,7 @@ import Layout from '../components/Layout/Layout';
 import Home from '../pages/Home/Home';
 import BoardGames from '../pages/BoardGames/BoardGames';
 import About from '../pages/About/About';
+import PDFViewer from '../components/common/PDFViewer';
 
 const router = createBrowserRouter(
   [
@@ -21,6 +22,10 @@ const router = createBrowserRouter(
         {
           path: 'about',
           element: <About />,
+        },
+        {
+          path: 'pdf-viewer',
+          element: <PDFViewer />,
         },
       ],
     },
