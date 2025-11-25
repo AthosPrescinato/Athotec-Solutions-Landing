@@ -6,7 +6,7 @@ export const games = [
       {
         type: "cover",
         name: "Cover",
-        path: "/games/rebel-princess/cover.pdf",
+        path: "/games/rebel-princess/cover.jpg",
       },
       {
         type: "manual",
@@ -22,7 +22,7 @@ export const games = [
       {
         type: "cover",
         name: "Cover",
-        path: "/games/skyfall/cover.pdf",
+        path: "/games/skyfall/cover.png",
       },
       { type: "manual", name: "Manual", path: "/games/skyfall/manual.pdf" },
       {
@@ -39,7 +39,7 @@ export const games = [
       {
         type: "cover",
         name: "Cover",
-        path: "/games/zombicide-black-plague/cover.pdf",
+        path: "/games/zombicide-black-plague/cover.jpg",
       },
       {
         type: "manual",
@@ -60,7 +60,7 @@ export const games = [
       {
         type: "cover",
         name: "Cover",
-        path: "/games/zombicide-green-horde/cover.pdf",
+        path: "/games/zombicide-green-horde/cover.png",
       },
       {
         type: "manual",

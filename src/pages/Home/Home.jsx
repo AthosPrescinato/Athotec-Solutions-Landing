@@ -1,27 +1,23 @@
-import React from 'react';
-import { games } from '../../data/games';
-import GameCard from '../../components/GameCard/GameCard';
+import React from "react";
+import { games } from "../../data/games";
+import GameCard from "../../components/GameCard/GameCard";
 
 const Home = () => {
-  const manualGames = games.map(game => ({
-    ...game,
-    files: game.files.filter(file => file.type === 'manual'),
-  })).filter(game => game.files.length > 0);
+  const manualGames = games.filter((gameWithManual) =>
+    gameWithManual.files.some((file) => file.type === "manual")
+  );
 
-  const extraGames = games.map(game => ({
-    ...game,
-    files: game.files.filter(file => file.type === 'extra'),
-  })).filter(game => game.files.length > 0);
+  const extraGames = games.filter((gameWithExtraMaterials) =>
+    gameWithExtraMaterials.files.some((file) => file.type === "extra")
+  );
 
   return (
     <div>
       <section className="game-section">
         <h2>Manuals</h2>
         <div className="game-grid">
-          {manualGames.map(game => (
-            game.files.map(file => (
-              <GameCard key={`${game.id}-${file.name}`} game={game} file={file} />
-            ))
+          {manualGames.map((game) => (
+            <GameCard key={game.id} game={game} fileType="manual" />
           ))}
         </div>
       </section>
@@ -29,10 +25,8 @@ const Home = () => {
       <section className="game-section">
         <h2>Extras</h2>
         <div className="game-grid">
-          {extraGames.map(game => (
-            game.files.map(file => (
-              <GameCard key={`${game.id}-${file.name}`} game={game} file={file} />
-            ))
+          {extraGames.map((game) => (
+            <GameCard key={game.id} game={game} fileType="extra" />
           ))}
         </div>
       </section>
