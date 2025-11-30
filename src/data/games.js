@@ -6,12 +6,12 @@ export const games = [
       {
         type: "cover",
         name: "Cover",
-        path: "public/games/rebel-princess/cover.jpg",
+        path: "games/rebel-princess/cover.jpg",
       },
       {
         type: "manual",
         name: "Manual",
-        path: "public/games/rebel-princess/manual.pdf",
+        path: "games/rebel-princess/manual.pdf",
       },
     ],
   },
@@ -22,13 +22,13 @@ export const games = [
       {
         type: "cover",
         name: "Cover",
-        path: "public/games/skyfall/cover.png",
+        path: "games/skyfall/cover.png",
       },
-      { type: "manual", name: "Manual", path: "/games/skyfall/manual.pdf" },
+      { type: "manual", name: "Manual", path: "games/skyfall/manual.pdf" },
       {
         type: "extra",
         name: "Locations",
-        path: "public/games/skyfall/locations.pdf",
+        path: "games/skyfall/locations.pdf",
       },
     ],
   },
@@ -39,17 +39,17 @@ export const games = [
       {
         type: "cover",
         name: "Cover",
-        path: "public/games/zombicide-black-plague/cover.jpg",
+        path: "games/zombicide-black-plague/cover.jpg",
       },
       {
         type: "manual",
         name: "Manual",
-        path: "public/games/zombicide-black-plague/manual.pdf",
+        path: "games/zombicide-black-plague/manual.pdf",
       },
       {
         type: "extra",
         name: "Skills Manual",
-        path: "public/games/zombicide-black-plague/skills-manual.pdf",
+        path: "games/zombicide-black-plague/skills-manual.pdf",
       },
     ],
   },
@@ -60,17 +60,17 @@ export const games = [
       {
         type: "cover",
         name: "Cover",
-        path: "public/games/zombicide-green-horde/cover.png",
+        path: "games/zombicide-green-horde/cover.png",
       },
       {
         type: "manual",
         name: "Manual",
-        path: "public/games/zombicide-green-horde/manual.pdf",
+        path: "games/zombicide-green-horde/manual.pdf",
       },
       {
         type: "extra",
         name: "Skills Manual",
-        path: "public/games/zombicide-green-horde/skills-manual.pdf",
+        path: "games/zombicide-green-horde/skills-manual.pdf",
       },
     ],
   },
