@@ -1,22 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
-import Colors from "../../styles/Colors";
 
 const Header = () => {
   return (
-    <header
-      className="header"
-      style={{
-        backgroundColor: Colors.backgroundPage,
-        color: Colors.textPrimary,
-      }}
-    >
+    <header className="header">
       <div className="container header-content">
         <div className="header-logo">
-          <Link to="/" style={{ color: Colors.textPrimary }}>
-            Athotec Solutions
-          </Link>
+          <Link to="/">Athotec Solutions</Link>
         </div>
         <nav className="header-nav">
           <ul>

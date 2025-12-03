@@ -12,30 +12,29 @@ const Home = () => {
   );
 
   return (
-    <div>
+    <main class="page-content">
       <section className="game-section">
-        <h2>Manuals</h2>
+        <h1>Manuals</h1>
         <div className="game-grid">
           {manualGames.map((game) => (
             <GameCard key={game.id} game={game} fileType="manual" />
           ))}
         </div>
-      </section>
+        <section className="divider" />
 
-      <section className="game-section">
-        <h2>Extras</h2>
+        <h1>Extras</h1>
         <div className="game-grid">
           {extraGames.map((game) => (
             <GameCard key={game.id} game={game} fileType="extra" />
           ))}
         </div>
-      </section>
 
-      <section className="game-section">
-        <h2>Tools</h2>
+        <section className="divider" />
+
+        <h1>Tools</h1>
         <p>Coming soon...</p>
       </section>
-    </div>
+    </main>
   );
 };
 

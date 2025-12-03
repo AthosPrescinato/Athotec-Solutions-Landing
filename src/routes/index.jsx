@@ -1,14 +1,14 @@
-import { createBrowserRouter } from 'react-router-dom';
-import Layout from '../components/Layout/Layout';
-import Home from '../pages/Home/Home';
-import BoardGames from '../pages/BoardGames/BoardGames';
-import About from '../pages/About/About';
-import PDFViewer from '../components/common/PDFViewer';
+import { createBrowserRouter } from "react-router-dom";
+import Layout from "../components/Layout/Layout";
+import Home from "../pages/Home/Home";
+import BoardGames from "../pages/BoardGames/BoardGames";
+import About from "../pages/About/About";
+import PDFViewer from "../components/common/PDFViewer";
 
 const router = createBrowserRouter(
   [
     {
-      path: '/',
+      path: "/",
       element: <Layout />,
       children: [
         {
@@ -16,22 +16,22 @@ const router = createBrowserRouter(
           element: <Home />,
         },
         {
-          path: 'board-games',
+          path: "board-games",
           element: <BoardGames />,
         },
         {
-          path: 'about',
+          path: "about",
           element: <About />,
         },
         {
-          path: 'pdf-viewer',
+          path: "pdf-viewer",
           element: <PDFViewer />,
         },
       ],
     },
   ],
   {
-    basename: '/Athotec-Solutions-Landing/',
+    basename: "/Athotec-Solutions-Landing/",
   }
 );
 

@@ -1,8 +1,8 @@
 .header {
   /* Esta é a barra de largura total */
   width: 100%;
-  background-color: #222629;
-  border-bottom: 1px solid #4f4f47;
+  background-color: #21262d;
+  border-bottom: 1px solid #3c551e;
 }
 
 .header-content {
@@ -16,7 +16,7 @@
 .header-logo a {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #ffc506;
+  color: #61892f;
   text-decoration: none;
 }
 .header-nav ul {
@@ -39,7 +39,7 @@
   background: transparent;
   border: none;
   padding: 1em 1.5em;
-  color: #ffc506;
+  color: #61892f;
   text-transform: uppercase;
   position: relative;
   transition: 0.5s ease;
@@ -54,12 +54,12 @@
   bottom: 0;
   height: 2px;
   width: 0;
-  background-color: #ffc506;
+  background-color: #61892f;
   transition: 0.5s ease;
 }
 
 .btn:hover {
-  color: #ffc506;
+  color: #61892f;
   transition-delay: 0.5s;
 }
 
@@ -74,7 +74,7 @@
   bottom: 0;
   height: 0;
   width: 100%;
-  background-color: #ffc506;
+  background-color: #61892f;
   transition: 0.4s ease;
   z-index: -1;
 }
